@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavender Resort</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
+</head>
+<body>
+  <div id="container">
+      <header>
+        
+        <h1 id="header-heading">LAVENDER RESORT</h1>
+        
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reservations.html">Reservation</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="activities.html">Activities</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+
+      <div class="wrapper main-wrapper">
+       
+        <main id="home_main">
+          <h1 class="activity_h1">Our Activities</h1> 
+          <div id="tabs">
+            <ul>
+              <li><a href="#tabs-1">Swimming</a></li>
+              <li><a href="#tabs-2">Nature Trail</a></li>
+              <li><a href="#tabs-3">Romantic Dinner</a></li>
+            </ul>
+            <div id="tabs-1">
+              <div class="flexcontainer">
+                <a href="images/river1.jpg" data-lightbox="images" data-title="River 1">
+                  <img class="flex_img" src="images/river1.jpg">
+                </a>
+        
+                <a href="images/river2.jpg" data-lightbox="images" data-title="River 2">
+                    <img class="flex_img" src="images/river2.jpg">
+                </a>
+        
+                <a href="images/river3.jpg" data-lightbox="images" data-title="River 3">
+                    <img class="flex_img" src="images/river3.jpg">
+                </a>
+                <a href="images/river4.jpg" data-lightbox="images" data-title="IRiver 4">
+                    <img class="flex_img" src="images/river4.jpg">
+                </a>
+              </div>
+            </div>
+            <div id="tabs-2">
+              <div class="flexcontainer">
+                <a href="images/field9.jpg" data-lightbox="images1" data-title="Trail 1">
+                  <img class="flex_img" src="images/field9.jpg">
+                </a>
+        
+                <a href="images/field10.jpg" data-lightbox="images1" data-title="Trail 2">
+                    <img class="flex_img" src="images/field10.jpg">
+                </a>
+        
+                <a href="images/field11.jpg" data-lightbox="images1" data-title="Trail 3">
+                    <img class="flex_img" src="images/field11.jpg">
+                </a>
+                <a href="images/field12.jpg" data-lightbox="images1" data-title="Trail 4">
+                    <img class="flex_img" src="images/field12.jpg">
+                </a>
+              </div>
+            </div>
+            <div id="tabs-3">
+              <div class="flexcontainer">
+                <a href="images/restaurant1.jpg" data-lightbox="images2" data-title="Dinner 1">
+                  <img class="flex_img" src="images/restaurant1.jpg">
+                </a>
+        
+                <a href="images/restaurant2.jpg" data-lightbox="images2" data-title="Dinner 2">
+                    <img class="flex_img" src="images/restaurant2.jpg">
+                </a>
+        
+                <a href="images/restaurant3.jpg" data-lightbox="images2" data-title="Dinner 3">
+                    <img class="flex_img" src="images/restaurant3.jpg">
+                </a>
+                <a href="images/lavender.jpg" data-lightbox="images2" data-title="Dinner 4">
+                    <img class="flex_img" src="images/lavender.jpg">
+                </a>
+              </div>
+            </div>
+          </div>
+    
+            <div class="gridcontainer">
+              <div class="grid_item grid_head">Activity</div>
+              <div class="grid_item grid_head">Description</div>
+              <div class="grid_item grid_head">Price</div>
+              <div class="grid_item">Swimming</div>
+              <div class="grid_item">Swimming in a beautiful clean river</div>
+              <div class="grid_item">Free</div>
+              <div class="grid_item">Nature Trail</div>
+              <div class="grid_item">Self-hiking or a guided tour</div>
+              <div class="grid_item">$40</div>
+              <div class="grid_item">Dinner</div>
+              <div class="grid_item">Romantic dinner in our restaurant</div>
+              <div class="grid_item">Per menu</div>
+            </div>
+        </main>
+   </div>
+
+   <footer class="footer">
+    <div class="container-footer">
+        <div class="contact">
+          <div class="number-phone">
+            <img class="phone" src="images/phone_white.svg" alt="Phone">
+            <p class="number">+1 (999) 39-146-39</p>
+          </div>
+          <div class="mail">
+            <img class="mail-icon" src="images/mail_white.svg" alt="Mail">
+            <p class="mail-address">lavenderresort@gmail.com</p>
+          </div>
+          <div class="social-icon">
+            <a href="www.instagram.com"><img class="icon-inst" src="images/noroot(4).svg" alt="Instagram"></a>
+            <a href="web.facebook.com"><img class="icon-face" src="images/fb.svg" alt="Facebook"></a>
+            <a href="www.whatsapp.com"><img class="icon-wa" src="images/noroot(2).svg" alt="WhatsApp"></a>
+          </div>
+        </div>
+        <p id="copyright">&copy; Lavender Resort 2022</p>
+    </div>
+  </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="lightbox.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavender Resort</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+</head>
+<body>
+  <div id="container">
+      <header>
+        
+        <h1 id="header-heading">LAVENDER RESORT</h1>
+        
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reservations.html">Reservation</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="activities.html">Activities</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+      <main class="wrapper main-wrapper reserv_main">
+        <div class="reserve_container">
+          <h1 class="reserve-h1">Reserve your stay in our resort</h1>
+          <form id="reserve_form" name="reserve_form" method="GET" action="book.html">
+              <fieldset id="dates">   
+                <div class="reserve_form_field">
+                    <label for="arrival_date">Arrival Date: </label>
+                    <input type="text" id="datepicker" required>
+                    <span></span>
+                </div>
+                <div class="reserve_form_field">
+                  <label for="departure_date">Departure Date: </label>
+                  <input type="text" id="datepicker2" required>
+                  <span></span>
+                </div>
+              </fieldset>
+
+              <fieldset id="reserve_rooms">
+                <div class="reserve_form_field">
+                    <label for="rooms">Rooms: </label>
+                    <input type="number" id="rooms" name="rooms" required>
+                    <span></span>
+                </div>
+                <div class="reserve_form_field">
+                  <label for="room_type">Room Type: </label>
+                  <!-- <input type="sele" id="room_type" name="room_type" required> -->
+                  <select name="room_type" id="room_type">
+                    <option value="standard">Standard</option>
+                    <option value="family">Family</option>
+                    <option value="superior">Superior</option>
+                  </select>
+                  <span></span>
+                </div>
+                <div class="reserve_form_field">
+                  <label for="fee">Booking Fee: </label>
+                  <input type="number" id="fee" name="fee">
+                  <span></span>
+                </div>
+              </fieldset>
+              <fieldset id="adult_child">
+                <div class="reserve_form_field">
+                    <label for="adults">Adults: </label>
+                    <input type="number" id="adults" name="adults" required>
+                    <span></span>
+                </div>
+                <div class="reserve_form_field">
+                    <label for="children">Children: 
+                        <input type="radio" name="type" id="yes" value="yes" checked> Yes
+                        <input type="radio" name="type" id="no" value="no"> No
+                    </label>
+                    <input type="number" id="children" name="children">
+                    <span></span>
+                </div>
+              </fieldset>
+
+              <fieldset id="data">
+                <div class="reserve_form_field">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="first_name" required>
+                    <span></span>
+                </div>
+                <div class="reserve_form_field">
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="last_name" name="last_name" required>
+                    <span></span>
+                </div>
+                <div class="reserve_form_field">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="999-999-9999" required>
+                    <span></span>
+                </div>
+              </fieldset>
+              
+              <fieldset id="buttons">
+                  <div>
+                      <input type="submit" id="book" name="book" value="Book">
+                      <input type="reset" id="reset" name="reset" value="Reset">
+                  </div>
+              </fieldset>
+          </form>
+        </div>
+      </main>
+      
+      <footer class="footer">
+        <div class="container-footer">
+            <div class="contact">
+              <div class="number-phone">
+                <img class="phone" src="images/phone_white.svg" alt="Phone">
+                <p class="number">+1 (999) 39-146-39</p>
+              </div>
+              <div class="mail">
+                <img class="mail-icon" src="images/mail_white.svg" alt="Mail">
+                <p class="mail-address">lavenderresort@gmail.com</p>
+              </div>
+              <div class="social-icon">
+                <a href="www.instagram.com"><img class="icon-inst" src="images/noroot(4).svg" alt="Instagram"></a>
+                <a href="web.facebook.com"><img class="icon-face" src="images/fb.svg" alt="Facebook"></a>
+                <a href="www.whatsapp.com"><img class="icon-wa" src="images/noroot(2).svg" alt="WhatsApp"></a>
+              </div>
+            </div>
+            <p id="copyright">&copy; Lavender Resort 2022</p>
+        </div>
+      </footer>
+  </div> 
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="script.js"></script> 
+    
+</body>
+</html>
