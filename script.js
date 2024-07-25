@@ -1,28 +1,27 @@
 "use strict";
-$(document).ready(function () {
-    //slider function
-    $('.slider').bxSlider(
-        {
-            auto: true,
-            autoControls: true,
-            captions: true
-        }
-    );
-});
+// $(document).ready(function () {
+//     $('.slider').bxSlider(
+//         {
+//             auto: true,
+//             autoControls: true,
+//             captions: true
+//         }
+//     );
+// });
 
 //datepicker function
-$( function() {
-    $( "#datepicker" ).datepicker({
-        changeMonth: true,
-        changeYear: true,
-        minDate: 0
-    });
-    $( "#datepicker2" ).datepicker({
-        changeMonth: true,
-        changeYear: true,
-        minDate: 1
-    });
-});
+// $( function() {
+//     $( "#datepicker" ).datepicker({
+//         changeMonth: true,
+//         changeYear: true,
+//         minDate: 0
+//     });
+//     $( "#datepicker2" ).datepicker({
+//         changeMonth: true,
+//         changeYear: true,
+//         minDate: 1
+//     });
+// });
 
 //form validation function
 $( () => {
@@ -150,13 +149,13 @@ $( () => {
 });
 
 //tabs function
-$( function() {
-    $( "#tabs" ).tabs();
-});
+// $( function() {
+//     $( "#tabs" ).tabs();
+// });
 
 //accordion function
-$( function() {
-    $( "#accordion" ).accordion({
-      collapsible: true
-    });
-});
+// $( function() {
+//     $( "#accordion" ).accordion({
+//       collapsible: true
+//     });
+// });
